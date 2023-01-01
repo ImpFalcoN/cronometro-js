@@ -28,7 +28,7 @@ const timer = {
         clearInterval(timer.interval);
         timer.interval = setInterval(timer.timing, 10);
     },
-    stop: () => {
+    pause: () => {
         clearInterval(timer.interval)
     },
     clear: () => {
@@ -36,7 +36,7 @@ const timer = {
         timer.millisecond = 0;
         timer.second = 0;
         timer.minute = 0;
-        conteiner_milliseconds.innerHTML = timer.update(timer.millisecond / 10)
+        conteiner_milliseconds.innerHTML = timer.update(timer.millisecond)
         conteiner_seconds.innerHTML = timer.update(timer.second);
         conteiner_minutes.innerHTML = timer.update(timer.minute);
     },
@@ -50,5 +50,5 @@ const timer = {
 
 
 start_button.addEventListener('click', timer.start);
-pause_button.addEventListener('click', timer.stop);
+pause_button.addEventListener('click', timer.pause);
 clear_button.addEventListener('click', timer.clear)
