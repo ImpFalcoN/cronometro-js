@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🕗 timer</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .content-conteiner{
+            color: rgb(241, 244, 247);
+            background-color: cadetblue;
+            width: 600px;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 80px;
+            border-radius: 10px; 
+            margin-bottom: 20px;           
+        }
+        button {
+            width: 100px;
+            font-size: 30px;
+        }
+        .start {
+            color: aliceblue;
+            background-color: green;
+        }
+        .stop {
+            color: aliceblue;
+            background-color: red;
+        }
+
+    </style>
+</head>
+
+<body>
+    <main class="content-conteiner">
+        <div>
+            <span class="minutes">00</span>:<span class="seconds">00</span>:<span class="milliseconds">00</span>
+        </div>    
+    </main>
+    <div>
+        <button class="start">start</button>
+        <button class="stop">stop</button>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
