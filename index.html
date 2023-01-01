@@ -26,15 +26,20 @@
         }
         button {
             width: 100px;
+            border-radius: 10px;
             font-size: 30px;
         }
         .start {
             color: aliceblue;
             background-color: green;
         }
-        .stop {
+        .pause {
             color: aliceblue;
-            background-color: red;
+            background-color: rgb(240, 137, 3);
+        }
+        .clear{
+            color: aliceblue;
+            background-color: rgb(240, 58, 58);
         }
 
     </style>
@@ -47,8 +52,9 @@
         </div>    
     </main>
     <div>
-        <button class="start">start</button>
-        <button class="stop">stop</button>
+        <button class="start">Start</button>
+        <button class="pause">Pause</button>
+        <button class="clear">Clear</button>
     </div>
     <script src="js/script.js"></script>
 </body>
